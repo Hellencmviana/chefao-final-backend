@@ -130,7 +130,6 @@ module.exports = class BOAuth {
 
   //UPDATE - ATUALIZAÇÃO DE DADOS DO USUÁRIO
   async update(req, res) {
-    console.log('TESTE HELLE')
     const id = req.params.id
     const { name, lastName, password } = req.body
 
@@ -142,7 +141,7 @@ module.exports = class BOAuth {
     try {
       const updatedUser = await User.updateOne({_id: id}, user)
       
-      console.log(updatedUser)
+      console.log("Qtde de alterações: " + updatedUser)
       if (updatedUser.matchedCount === 0){
         res.status(422).json({ message: 'O usuário não foi encontrado!'})
         return 
