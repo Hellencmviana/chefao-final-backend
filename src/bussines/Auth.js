@@ -139,7 +139,7 @@ module.exports = class BOAuth {
       password
     }
     try {
-      const updatedUser = await User.updateOne({_id: id}, user)
+      const updatedUser = await User.updateOne({_id: req.userAuth.id}, user)
       
       console.log("Qtde de alterações: " + updatedUser)
       if (updatedUser.matchedCount === 0){
