@@ -1,11 +1,10 @@
 {
   "name": "api_role",
   "version": "1.0.0",
-  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node app/index.js",
-    "start-dev": "nodemon app/index.js"
+    "start": "node src/index.js",
+    "start-dev": "nodemon src/index.js"
   },
   "keywords": [],
   "author": "Gustavo Alberto <gustavoasouzasilva@gmail.com>",
