@@ -139,8 +139,6 @@ module.exports = class BOAuth {
       password
     }
       console.log("req.params.id = "+ req.params.id)
-      console.log("req.params.id = "+ req.params.id)
-      console.log("req.User.id = "+ req.User.id)
       console.log("id = "+ id)
     try {
       console.log("entrou no try")
