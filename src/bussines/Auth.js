@@ -139,6 +139,12 @@ module.exports = class BOAuth {
       password
     }
     try {
+      console.log("req.params.id = "+ req.params.id)
+      console.log("req.userAuth.id = "+ req.userAuth.id)
+      console.log("req.params.id = "+ req.params.id)
+      console.log("req.User.id = "+ req.User.id)
+      console.log("id = "+ id)
+
       const updatedUser = await User.updateOne({_id: req.params.id}, user)
       
       console.log("Qtde de alterações: " + updatedUser)
