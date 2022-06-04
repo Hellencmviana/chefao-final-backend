@@ -159,3 +159,5 @@ module.exports = class BOAuth {
     }
   }
 };
+
+module.exports = User;
