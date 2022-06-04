@@ -144,11 +144,12 @@ module.exports = class BOAuth {
       console.log("Qtde de alterações: " + updatedUser)
       if (updatedUser.matchedCount === 0){
         res.status(422).json({ message: 'O usuário não foi encontrado!'})
-        return 
+        return
       }
 
       res.status(200).json(user)
     } catch (error) {
+      console.log("entrou no catch")
       res.status(500).json({ error: error })
     }
   }
