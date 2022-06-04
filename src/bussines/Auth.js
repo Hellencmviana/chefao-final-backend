@@ -141,7 +141,7 @@ module.exports = class BOAuth {
       console.log("req.params.id = "+ req.params.id)
       console.log("id = "+ id)
       console.log("user.id = "+ user.id)
-      console.log("User.id = "+ User.id)
+      console.log(user && user.id + user + user.id)
     try {
       console.log("entrou no try")
 
